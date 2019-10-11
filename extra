@@ -21,3 +21,85 @@ https://nodejs.org/en/download/
 https://github.com/
 https://github.com/Aakashdeveloper
 https://code.visualstudio.com/
+
+scaffolding
+
+node -v
+
+node package
+node_modules
+npm package
+
+ Local Packages
+ Global Packages
+ --Build/Test/Run
+
+.jar/.wars
+dlls
+gems
+
+
+/**************************
+  package.json
+**************************/
+json
+[
+    {
+        name:"john",
+        class:"UI"
+    },
+    {
+        name:"eva",
+        class:"React"
+    }
+]
+/**************************
+   Step For package.json
+**************************/
+> Navigate to folder using cmd/terminal
+> npm init
+> Answer Question
+> write "yes"
+
+/**************************
+   Install Local Packages
+**************************/
+> Navigate to folder using cmd/terminal
+> npm install zone.js  / npm i zone.js / npm install zone.js --save
+
+/**************************
+   Install Global Packages
+**************************/
+Windows
+> Open cmd as admin
+> Navigate to folder using cmd/terminal
+> npm install -g zone.js
+
+Mac/linux
+> Navigate to folder using cmd/terminal
+> sudo npm i -g @aakashdevelper/create-node-app
+
+
+
+
+
+/**************************
+  Setup React APP
+**************************
+/Windows
+> Open cmd as admin
+> npm install -g create-react-app
+> Navigate to folder using cmd/terminal
+> create-react-app firstapp
+> cd firstapp
+> npm start
+
+
+
+Mac/linux
+> Open the terminal
+> sudo npm install -g create-react-app
+> Navigate to folder using cmd/terminal
+> create-react-app firstapp
+> cd firstapp
+> npm start
