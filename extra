@@ -103,3 +103,85 @@ Mac/linux
 > create-react-app firstapp
 > cd firstapp
 > npm start
+
+
+/***********
+  Function 
+*************/
+var a = 10
+var b = 20
+a+b 
+
+Es5
+function add(a,b){
+  return a+b
+}
+
+Es6
+var add = (a,b) => {return a+b}
+
+add(1,2)
+
+
+/***********
+  Class
+*************/
+//Es5
+function person1(name) {
+   this.legs=2,
+   this.color='white'
+   this.name = name
+}
+
+function person2() {
+   this.hands=2,
+   this.color='red',
+   this.city='London'
+}
+
+person1.prototype = new person2()
+
+var ram = new person1()
+
+var car = {
+  coloe:'red'
+}
+
+constructor()
+
+class geo{
+  constructor(){
+    this.legs=2,
+    this.color='red'
+  }
+}
+
+class language extends geo{
+  constructor(legs,color,lat, long){
+    super(legs,color)
+    this.lat = lat;
+    this.long = long
+  }
+}
+
+var hindi = new language(10.1,20.1)
+
+/*************
+  Declare variable
+******************/
+Declare & Assign
+var  Redecalre & reassign
+let  cannot Redecalre & but reassign
+const cannot Redecalre & cannot reassign
+
+
+var a 
+a = 10
+
+/*************
+ Component in react
+******************/
+> Functional         > Class Based
+Light in Weight         Heavy as compare to Functional
+We use rendering        For logical part
+Cannot Handle State     We Can handle state
