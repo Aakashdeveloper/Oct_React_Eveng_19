@@ -6,13 +6,13 @@ import About from './component/About'
 
 const App = () => {
     return(
-        <div className="maindiv">
+        <React.Fragment>
             <Header></Header>
-            <p>jhdsjgbhjbgjv e h ehjv bui jebfibjb ujewv h iub 
-                kjdvjkevj 
-                kjkj ekv  e v vj 
-            </p>
-        </div>
+            <h1>My React Page</h1>
+            <h2>Second Heading</h2>
+            <Contact></Contact>
+            <About></About>
+        </React.Fragment>
         
     )
 }
