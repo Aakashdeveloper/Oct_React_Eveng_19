@@ -187,3 +187,22 @@ We use rendering        For logical part
 Cannot Handle State     We Can handle state
 
 
+
+State                Props
+LocalVariable        Helf to transfer state/data
+
+Component A    Props        Component B
+State A      -------->       State B
+
+
+
+ternery operator
+var a = 10
+undefined
+a > 10 ? "hii":"bie"
+"bie"
+a == 10 ? "hii":"bie"
+"hii"
+
+https://www.w3schools.com/jsref/jsref_map.asp
+https://www.w3schools.com/jsref/jsref_filter.asp
