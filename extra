@@ -206,3 +206,32 @@ a == 10 ? "hii":"bie"
 
 https://www.w3schools.com/jsref/jsref_map.asp
 https://www.w3schools.com/jsref/jsref_filter.asp
+
+//map
+
+var a =[1,2,3,4,5]
+
+function squr(a){
+  return a*a
+}
+
+a.map(squr)
+a.map((data)=>{return data*data})
+
+var a =[1,2,3,4,5]
+function testval(a){
+  return a%2==0
+}
+
+a.filter(testval)
+a.map(testval)
+
+
+var a = [0,1,2,3]
+
+function mylogic(a){
+  return a*1
+}
+
+a.map(mylogic) =>
+a.filter(mylogic) =>

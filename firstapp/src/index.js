@@ -1,17 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Contact from './component/Contact';
-import Header from './component/Header';
-import About from './component/About'
+import Home from './component/Home';
 
 const App = () => {
     return(
         <div className="maindiv">
-            <Header></Header>
-            <p>jhdsjgbhjbgjv e h ehjv bui jebfibjb ujewv h iub 
-                kjdvjkevj 
-                kjkj ekv  e v vj 
-            </p>
+           <Home/>
         </div>
         
     )
