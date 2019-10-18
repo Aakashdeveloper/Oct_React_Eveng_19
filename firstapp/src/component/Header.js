@@ -2,8 +2,8 @@ import React,{Component} from 'react';
 import './Header.css'
 
 class Header extends Component{
-    constructor(){
-        super()
+    constructor(props){
+        super(props)
 
         this.state={
             title:"React App",
@@ -14,6 +14,7 @@ class Header extends Component{
     inputChanges(event){
         console.log(event.target.value)
         this.setState({userInput:event.target.value?event.target.value:'User text Here'})
+        this.props.userText(event.target.value)
     }
 
     render(){

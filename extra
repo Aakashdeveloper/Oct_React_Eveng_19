@@ -223,7 +223,7 @@ function testval(a){
   return a%2==0
 }
 
-a.filter(testval)
+a.filter((a)=>{return a%2==0})
 a.map(testval)
 
 
@@ -235,3 +235,18 @@ function mylogic(a){
 
 a.map(mylogic) =>
 a.filter(mylogic) =>
+
+
+var a = [1,2,3,4,5]
+undefined
+a.indexOf(2)
+1
+a.indexOf(5)
+4
+a.indexOf(6)
+-1
+a.indexOf("a")
+-1
+
+
+ npm i react-router-dom
