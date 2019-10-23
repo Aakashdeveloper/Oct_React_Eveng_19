@@ -250,3 +250,9 @@ a.indexOf("a")
 
 
  npm i react-router-dom
+/*********************
+  Fake API
+***********************/
+npm i -g json-server
+
+json-server --watch db.json --port 8900
