@@ -1,13 +1,34 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 const ArtistList = (props) => {
-    console.log("in the artists", props);
+    console.log("data in list>> ",props)
+    const list = ({artistData}) => {
+        if(artistData !== " "){
+            // console.log("data in list>> ",props)
+            return artistData.map((item,index) => {
+
+                const style = {
+                    background:`url('/images/covers/${item.cover}.jpg')
+                    no-repeat`
+                }
+                return(
+                   <Link key={index} to={`/artist/${item.id}`}
+                   className="artist_item" style={style}>
+                       <div>{item.name}</div>
+                   </Link>
+                )
+            })
+        }
+    }
+
     return(
         <div className="artist_list">
-            <h4> Browse Artists </h4>
-
+            <h4>Browse The Artists</h4>
+           {list(props)}
         </div>
     )
 }
 
-export default ArtistList;
+export default ArtistList
