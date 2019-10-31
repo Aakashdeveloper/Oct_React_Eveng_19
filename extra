@@ -256,3 +256,4 @@ a.indexOf("a")
 npm i -g json-server
 
 json-server --watch db.json --port 8900
+npm i redux react-redux redux-promise react-slick
