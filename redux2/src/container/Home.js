@@ -1,18 +1,25 @@
 import React,{ Component} from 'react';
 import { connect } from 'react-redux';
-import {latestNews,articleNews} from '../actions';
-import PropTypes from 'prop-types'
+import {latestNews,articleNews,latestGallery} from '../actions';
+import PropTypes from 'prop-types';
+
+import ArticleNews  from '../component/Home/ArticlesNews';
+import LatestNews from '../component/Home/LatestNews';
+import Gallery from '../component/Home/GalleryNews';
 
 class Home extends Component {
     componentDidMount(){
         this.props.dispatch(latestNews())
         this.props.dispatch(articleNews())
+        this.props.dispatch(latestGallery())
     }
 
     render(){
         return(
             <div>
-                <h1>News App</h1>
+                <LatestNews latestdata={this.props.artilces.latest}></LatestNews>
+                <ArticleNews articledata={this.props.artilces.article}></ArticleNews>
+                <Gallery gallerydata={this.props.gal.gallery}></Gallery>
             </div>
         )
     }
@@ -23,7 +30,8 @@ class Home extends Component {
 function mapStateToProps(state){
     console.log(state)
     return{
-        artilces:state.artilce
+        artilces:state.articles,
+        gal: state.galdata
     }
 }
 

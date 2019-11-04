@@ -19,3 +19,13 @@ export function articleNews(){
         payload:output
     }
 }
+
+export function latestGallery(){
+    const output = fetch(`${url}/galleries?_limit=2`,{method:'GET'})
+    .then(response => response.json())
+
+    return{
+        type:'GET_GALLERY',
+        payload:output
+    }
+}
