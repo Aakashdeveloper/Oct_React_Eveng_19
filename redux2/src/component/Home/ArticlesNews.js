@@ -7,7 +7,8 @@ const ArticleNews = (props) => {
         if(articledata){
             return articledata.map((item) => {
                 return(
-                    <Link to="/" className="item">
+                    <Link to={`/details/${item.id}`} className="item"
+                        key={item.id}>
                         <div className="left"
                             style={{background:`url(/images/articles/${item.img})`}}>
                         </div>
