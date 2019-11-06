@@ -10,3 +10,12 @@ export function moviesList(){
 }
 
 
+export function articleNews(){
+    const output = fetch('https://ngmovies.herokuapp.com/api/getMovies',{method:'GET'})
+    .then(response => response.json())
+
+    return{
+        type:'GET_ARTICLE',
+        payload:output
+    }
+}

@@ -48,3 +48,58 @@ export function clearSelectedNews(){
         payload:[]
     }
 }
+
+export function handleLikes(array , id){
+    const output = fetch(`${url}/articles/${id}`,{
+        method:'PATCH',
+        headers:{
+            'Accept':'application/json',
+            'Content-Type':'application/json'
+        },
+        body: JSON.stringify({likes: array})
+    })
+
+    .then(response => response.json())
+
+    return {
+        type:'HANDLE_LIKES',
+        payload: output
+    }
+}
+
+export function PostDate(title,body){
+
+    var random = Math.floor(Math.random()*1000)
+    var data = {
+        id: random,
+        title:title ,
+        body: body,
+        category: "Sports",
+        img: "2.jpg",
+        date: "21/21/1944",
+        author: "Mary Bottom",
+        views: 456,
+        likes: [
+          65,
+          12
+        ]
+      }
+
+      fetch(`${url}/articles/`,{
+          method:'POST',
+          headers:{
+            'Accept':'application/json',
+            'Content-Type':'application/json'
+            },
+            body: JSON.stringify(data)
+      })
+
+      .then((response) => response.json())
+
+
+      return{
+          type:'POST_FORM',
+          payload: ''
+      }
+}
+

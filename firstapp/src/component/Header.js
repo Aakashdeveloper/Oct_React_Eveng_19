@@ -26,7 +26,7 @@ class Header extends Component{
                </div>
                <center>
                 <input  onChange={this.inputChanges.bind(this)}/>
-                <h4>{this.state.userInput}</h4>
+                <h3>{this.state.userInput}</h3>
                </center>
                <hr/>
             </header>

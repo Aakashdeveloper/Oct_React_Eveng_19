@@ -10,8 +10,8 @@
       "author": "Mary Bottom",
       "views": 456,
       "likes": [
-        62,
-        11
+        65,
+        12
       ]
     },
     {
@@ -24,8 +24,8 @@
       "author": "Aston Kutcher",
       "views": 678,
       "likes": [
-        358,
-        102
+        360,
+        103
       ]
     },
     {
@@ -80,8 +80,22 @@
       "author": "Meredith Cash",
       "views": 237,
       "likes": [
-        12,
-        9
+        14,
+        10
+      ]
+    },
+    {
+      "id": 742,
+      "title": "Earth Quick in Japan",
+      "body": "Yesterday it was Earth Quick in Japan",
+      "category": "Sports",
+      "img": "2.jpg",
+      "date": "21/21/1944",
+      "author": "Mary Bottom",
+      "views": 456,
+      "likes": [
+        65,
+        12
       ]
     }
   ],
