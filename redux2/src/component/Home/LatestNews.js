@@ -25,7 +25,7 @@ const LatestNews = (props) => {
     }
 
     return(
-        <div className="home-latest">
+        <div className="home-latest testapp">
             {NewsRender(props)}
         </div>
     )
